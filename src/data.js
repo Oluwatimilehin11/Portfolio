@@ -1,0 +1,112 @@
+// src/data.js
+export const DATA = {
+  profile: {
+    name: "Oluwatimilehin Aramide",
+    title: "Data-Centric Computing & Mathematics",
+    location: "St. John's, NL",
+    email: "aramideoluwatimilehin11@gmail.com",
+    github: "https://github.com/Oluwatimilehin11",
+    linkedin: "https://www.linkedin.com/in/oluwatimilehin-aramide/"
+  },
+  
+  phrases: [
+    "CS Student · Data Engineer · Systems Builder",
+    "Building pipelines that actually get used.",
+    "From ETL nodes to modular web architecture."
+  ],
+
+  about: [
+    "I'm a **Computer Science student** at Memorial University of Newfoundland with a minor in Mathematics, building at the intersection of data engineering, machine learning, and computational optimization[cite: 1, 2].",
+    "Through my technical roles in data science and engineering, I specialize in transforming multi-source operational metrics into highly stable, optimized infrastructure that delivers real stakeholder value[cite: 1, 2].",
+    "Beyond data engineering, I operate as a **freelance web application developer**—architecting and deploying full-scale commercial platforms for small business clients[cite: 1, 2]. I also serve as a team lead within community volunteer units, which constantly sharpens my workflow orchestration and team communication[cite: 1, 2]."
+  ],
+
+  skills: [
+    { category: "Languages & Querying", items: ["Python", "SQL", "Java", "C", "JavaScript"] },
+    { category: "Data & ML", items: ["EDA", "Clustering", "KPI Tracking", "Predictive Modelling", "Data Cleaning"] },
+    { category: "Databases & Pipelines", items: ["PostgreSQL", "Apache Airflow", "ETL Design"] },
+    { category: "Visualization & BI", items: ["Power BI", "Tableau", "Excel (PivotTables)", "Kibana"] },
+    { category: "Frontend & Web", items: ["React", "Vite", "HTML/CSS", "Vercel"] },
+    { category: "Professional", items: ["Stakeholder Communication", "Documentation", "Team Leadership", "ClickUp"] }
+  ],
+
+  experience: [
+    {
+      role: "Research & Data Intern (Volunteer)",
+      company: "Dikan Tech Corp",
+      period: "2026 – Present",
+      bullets: [
+        "Supporting research and data initiatives at a local tech organization[cite: 1, 2].",
+        "Applying data analysis, reporting, and documentation skills to drive data-informed decisions[cite: 1, 2]."
+      ]
+    },
+    {
+      role: "Crew Trainer",
+      company: "McDonald's Canada",
+      period: "2026 – Present",
+      bullets: [
+        "Train and onboard new crew members on operational metrics, quality assurance standards, and safety compliance[cite: 1, 2].",
+        "Coordinate multi-station workflows during peak hours—keeping speed and quality consistent under pressure[cite: 1, 2].",
+        "Provide on-floor coaching and constructive feedback to support crew development[cite: 1, 2]."
+      ]
+    },
+    {
+      role: "Data Engineering Trainee",
+      company: "Dataset Nexus Tech · Remote",
+      period: "Apr 2022 – Jun 2023",
+      bullets: [
+        "Designed and maintained ETL pipelines with Apache Airflow integrating multi-source data into datasets[cite: 1, 2].",
+        "Performed data quality checks and consistency audits to ensure reliable downstream reporting[cite: 1, 2].",
+        "Queried and managed relational datasets in PostgreSQL; monitored pipeline health via Kibana[cite: 1, 2].",
+        "Documented data workflows and schemas to enable analyst reuse and reduce onboarding friction[cite: 1, 2]."
+      ]
+    },
+    {
+      role: "Data Scientist Intern",
+      company: "Dataset Nexus Tech · Remote",
+      period: "Oct 2021 – Feb 2022",
+      bullets: [
+        "Cleaned and transformed large datasets using Python, SQL, and Excel; built Power BI and Tableau dashboards tracking KPIs[cite: 1, 2].",
+        "Contributed to a 15% reduction in marketing costs through campaign optimization recommendations[cite: 1, 2].",
+        "Applied clustering and pattern recognition to segment users and present insights to non-technical stakeholders[cite: 1, 2]."
+      ]
+    },
+    {
+      role: "Ushering Team Lead (Volunteer)",
+      company: "CMFI Newfoundland",
+      period: "2023 – Present",
+      bullets: [
+        "Lead a team of ushers coordinating service operations at a faith community organization[cite: 1, 2].",
+        "Manage logistics, schedules, and team communication to ensure smooth, welcoming experiences[cite: 1, 2]."
+      ]
+    }
+  ],
+
+  projects: [
+    {
+      name: "Tov Studios Commercial Platform",
+      tag: "Web · Client Project Deployed",
+      desc: "Engineered and shipped a full production website for a photography business client[cite: 1, 2]. Implemented using React and Vite with a custom brand identity system, structural multi-page routing pathways, dynamic media galleries, and optimized production Vercel deployment[cite: 1, 2].",
+      links: { live: "https://tov-studios.vercel.app", github: "https://github.com/Oluwatimilehin11" }
+    },
+    {
+      name: "NurseAI — ICU Assistant",
+      tag: "AI · Python · IBM-HealthTech",
+      desc: "An AI-powered ICU monitoring assistant that analyzes patient data arrays, mitigates clinician alarm fatigue, and auto-generates clean clinical notes via a multi-agent orchestration framework[cite: 1, 2].",
+      links: { github: "https://github.com/Oluwatimilehin11" }
+    },
+    {
+      name: "Website Engagement Analytics Engine",
+      tag: "Data · ETL Pipelines",
+      desc: "Consolidated multi-source user metrics into a centralized PostgreSQL instance, scheduled automated ETL workflows via Apache Airflow, and structured analytical dashboards for trend tracking[cite: 1, 2].",
+      links: { github: "https://github.com/Oluwatimilehin11" }
+    }
+  ],
+
+  hobbies: [
+    { icon: "🛠️", name: "Freelance Web Engineering", desc: "Collaborating with local business clients to translate complex commercial constraints into responsive frontend apps, like the Tov Studios project[cite: 1, 2]." },
+    { icon: "🙌", name: "Operational Leadership", desc: "Serving as Team Lead for ushering logistics at CMFI NL since 2023[cite: 1, 2]. Treating volunteer coordination as a serious venue for workflow management[cite: 1, 2]." },
+    { icon: "🤖", name: "AI Orchestration", desc: "Designing complex multi-agent architectures like NurseAI to explore structural data pipelines and intelligent automation vectors[cite: 1, 2]." },
+    { icon: "📊", name: "Mathematical Analysis", desc: "Leveraging my math minor to dive into numerical optimization paths and algorithms to ground my computing logic[cite: 1, 2]." }
+  ]
+};
