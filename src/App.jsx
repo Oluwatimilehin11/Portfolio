@@ -16,9 +16,9 @@ export const DATA = {
   ],
 
   about: [
-    "I'm a **Computer Science student** at Memorial University of Newfoundland with a minor in Mathematics, building at the intersection of data engineering, machine learning, and computational optimization.",
+    "I'm a Computer Science student at Memorial University of Newfoundland with a minor in Mathematics, building at the intersection of data engineering, machine learning, and computational optimization.",
     "Through my technical roles in data science and engineering, I specialize in transforming multi source data systems into highly stable, optimized infrastructure that delivers real stakeholder value.",
-    "Beyond data engineering, I operate as a **freelance web application developer** architecting and deploying full scale commercial platforms for small business clients. I also serve as a team lead within community volunteer units, which constantly sharpens my workflow orchestration and team communication."
+    "Beyond data engineering, I operate as a freelance web application developer architecting and deploying full scale commercial platforms for small business clients. I also serve as a team lead within community volunteer units, which constantly sharpens my workflow orchestration and team communication."
   ],
 
   skills: [
@@ -68,7 +68,7 @@ export const DATA = {
       bullets: [
         "Cleaned and transformed large datasets using Python, SQL, and Excel; built Power BI and Tableau dashboards tracking KPIs.",
         "Contributed to a 15% reduction in marketing costs through campaign optimization recommendations.",
-        "Applied clustering and pattern recognition to segment users and present insights to non technical stakeholders."
+        "Apply clustering and pattern recognition to segment users and present insights to non technical stakeholders."
       ]
     },
     {
