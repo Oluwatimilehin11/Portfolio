@@ -47,7 +47,7 @@ export default function App() {
       <div style={{ position: 'fixed', bottom: '15%', left: '-60px', width: '320px', height: '320px', borderRadius: '50%', filter: 'blur(80px)', background: 'rgba(201,168,76,0.05)', pointerEvents: 'none', zIndex: 1 }} />
 
       {/* STICKY TOP NAVIGATION BAR */}
-      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, display: 'flex', alignItems: 'center', justifycontent: 'space-between', padding: '1.1rem 5%', background: 'rgba(15,22,36,0.85)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.1rem 5%', background: 'rgba(15,22,36,0.85)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
         <a href="#" style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.2rem', color: '#C9A84C', letterSpacing: '0.05em', textDecoration: 'none' }}>Timi.</a>
         <div style={{ display: 'flex', gap: '2rem' }}>
           {['About', 'Skills', 'Experience', 'Projects', 'Hobbies', 'Contact'].map(link => (
@@ -56,11 +56,11 @@ export default function App() {
         </div>
       </nav>
 
-      {/* HERO HERO COMPONENT SECTION */}
-      <section id="hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifycontent: 'center', padding: '8rem 5% 5rem', position: 'relative' }}>
+      {/* HERO COMPONENT SECTION */}
+      <section id="hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '8rem 5% 5rem', position: 'relative' }}>
         <p style={{ fontSize: '0.78rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#4A9B8E', marginBottom: '1.2rem' }}>{profile.location} · Open to opportunities</p>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(2.8rem, 7vw, 5.5rem)', fontWeight: 700, lineHeight: 1.08, margin: '0 0 1rem 0' }}>
-          Oluwatimilehin<br><span style={{ color: '#C9A84C', fontStyle: 'italic' }}>Aramide.</span>
+          Oluwatimilehin<br /><span style={{ color: '#C9A84C', fontStyle: 'italic' }}>Aramide.</span>
         </h1>
         <div style={{ fontFamily: 'monospace', fontSize: 'clamp(1rem, 2.2vw, 1.35rem)', color: '#8A95A8', marginBottom: '2.4rem', minHeight: '2em' }}>
           {text}
@@ -192,7 +192,7 @@ export default function App() {
         <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 600 }}>Say <span style={{ color: '#C9A84C', fontStyle: 'italic' }}>hello.</span></h2>
         <div style={{ width: '48px', height: '2px', background: 'linear-gradient(90deg, #C9A84C, transparent)', margin: '0 auto 2rem' }} />
         <p style={{ color: '#8A95A8', maxWidth: '520px', margin: '0 auto 2rem' }}>I'm open to pipeline systems optimization roles, data engineering assignment collaborations, and deep software infrastructure architectures. Connect below.</p>
-        <div style={{ display: 'flex', justifycontent: 'center', gap: '1.2rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1.2rem', flexWrap: 'wrap' }}>
           <a href={`mailto:${profile.email}`} style={{ display: 'flex', alignItems: 'center', gap: '.5rem', color: '#8A95A8', fontSize: '.88rem', textDecoration: 'none', border: '1px solid rgba(201,168,76,0.18)', borderRadius: '8px', padding: '.65rem 1.2rem' }}>✉ Email</a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '.5rem', color: '#8A95A8', fontSize: '.88rem', textDecoration: 'none', border: '1px solid rgba(201,168,76,0.18)', borderRadius: '8px', padding: '.65rem 1.2rem' }}>in LinkedIn</a>
           <a href={profile.github} target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '.5rem', color: '#8A95A8', fontSize: '.88rem', textDecoration: 'none', border: '1px solid rgba(201,168,76,0.18)', borderRadius: '8px', padding: '.65rem 1.2rem' }}>⌥ GitHub</a>
