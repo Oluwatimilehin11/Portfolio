@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { DATA } from './data'; 
 
-export default function App() {
+ function App() {
   const { profile, phrases, about, skills, experience, projects, hobbies } = DATA;
 
   const [text, setText] = useState('');
