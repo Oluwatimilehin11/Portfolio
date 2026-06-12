@@ -59,7 +59,7 @@ export default function App() {
       <section id="hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '8rem 5% 5rem', position: 'relative' }}>
         <p style={{ fontSize: '0.78rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#4A9B8E', marginBottom: '1.2rem' }}>{profile.location} · Open to opportunities</p>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(2.8rem, 7vw, 5.5rem)', fontWeight: 700, lineHeight: 1.08, margin: '0 0 1rem 0' }}>
-          Oluwatimilehin<br />span style={{ color: '#C9A84C', fontStyle: 'italic' }}>Aramide.</span>
+          Oluwatimilehin<br /><span style={{ color: '#C9A84C', fontStyle: 'italic' }}>Aramide.</span>
         </h1>
         <div style={{ fontFamily: 'monospace', fontSize: 'clamp(1rem, 2.2vw, 1.35rem)', color: '#8A95A8', marginBottom: '2.4rem', minHeight: '2em' }}>
           {text}
