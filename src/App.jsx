@@ -110,3 +110,4 @@ export const DATA = {
     { icon: "📊", name: "Mathematical Analysis", desc: "Leveraging my math minor to dive into numerical optimization paths and algorithms to ground my computing logic." }
   ]
 };
+export default App;
