@@ -75,6 +75,7 @@ function App() {
         gap: '3rem', 
         flexWrap: 'wrap-reverse' 
       }}>
+        {/* Left Headline Content */}
         <div style={{ flex: '1 1 420px', maxWidth: '560px' }}>
           <p style={{ 
             fontSize: '0.78rem', 
@@ -89,7 +90,7 @@ function App() {
           
           <h1 style={{ 
             fontFamily: "'Playfair Display', serif", 
-            fontSize: 'clamp(2.5rem, 5.5vw, 4.2rem)', 
+            fontSize: 'clamp(2.4rem, 5vw, 4rem)', 
             fontWeight: 700, 
             lineHeight: 1.1, 
             margin: '0 0 1.2rem 0', 
@@ -100,7 +101,7 @@ function App() {
 
           <div style={{ 
             fontFamily: 'monospace', 
-            fontSize: 'clamp(0.92rem, 2vw, 1.05rem)', 
+            fontSize: 'clamp(0.9rem, 2vw, 1rem)', 
             color: '#4B5563', 
             marginBottom: '2rem', 
             minHeight: '2em' 
@@ -110,18 +111,21 @@ function App() {
           </div>
 
           {/* Compact Inline Buttons */}
-          <div style={{ display: 'inline-flex', gap: '0.9rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center' }}>
             <a 
               href="#projects" 
               style={{ 
                 background: '#0F1624', 
                 color: '#FFFFFF', 
-                padding: '0.75rem 1.6rem', 
-                fontSize: '0.85rem', 
+                padding: '0.7rem 1.4rem', 
+                fontSize: '0.84rem', 
                 fontWeight: 600, 
                 borderRadius: '8px', 
                 textDecoration: 'none',
-                display: 'inline-block',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: 'auto',
                 whiteSpace: 'nowrap'
               }}
             >
@@ -133,12 +137,15 @@ function App() {
                 background: '#FFFFFF', 
                 color: '#1F2937', 
                 border: '1px solid #D1D5DB', 
-                padding: '0.75rem 1.6rem', 
-                fontSize: '0.85rem', 
+                padding: '0.7rem 1.4rem', 
+                fontSize: '0.84rem', 
                 fontWeight: 500, 
                 borderRadius: '8px', 
                 textDecoration: 'none',
-                display: 'inline-block',
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: 'auto',
                 whiteSpace: 'nowrap'
               }}
             >
@@ -150,12 +157,12 @@ function App() {
         {/* Squircle Centered Portrait */}
         <div style={{ flex: '0 0 auto', margin: '0 auto' }}>
           <div style={{ 
-            width: 'clamp(210px, 22vw, 280px)', 
-            height: 'clamp(210px, 22vw, 280px)', 
+            width: 'clamp(210px, 22vw, 270px)', 
+            height: 'clamp(210px, 22vw, 270px)', 
             borderRadius: '28px', 
             overflow: 'hidden', 
             border: '1px solid #E5E7EB', 
-            boxShadow: '0 12px 30px rgba(0,0,0,0.05)',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.05)',
             background: '#F9FAFB' 
           }}>
             <img 
