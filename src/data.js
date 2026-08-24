@@ -8,20 +8,19 @@ export const DATA = {
     email: "aramideoluwatimilehin11@gmail.com",
     github: "https://github.com/Oluwatimilehin11",
     linkedin: "https://www.linkedin.com/in/oluwatimilehin-aramide/",
-    portfolio: "https://oluwatimilehinaramideportfolio.netlify.app",
-    avatar: "/headshot.jpg"
+    portfolio: "https://Oluwatimilehin11.github.io/Portfolio/",
+    avatar: `${import.meta.env.BASE_URL}headshot.jpg`
   },
   
   phrases: [
     "CS Student · Data-Centric Computing · Systems Builder",
-    "Building robust pipelines, low-latency engines, and actionable BI models.",
+    "Finding what I do fun and what I do fun is finding.",
     "From C++ systems and ETL nodes to modular web architecture."
   ],
 
   about: [
-    "I'm a **Computer Science student (Data-Centric Computing)** at Memorial University of Newfoundland with a minor in Mathematics, specializing in data extraction, cleaning, transformation, and analytical reporting.",
-    "Through my technical roles in data science, engineering, and systems development, I specialize in transforming complex data workflows into highly stable PostgreSQL databases, high-performance C++ backends, and automated Apache Airflow ETL pipelines that deliver real stakeholder value.",
-    "Beyond pipeline architecture, I operate as a **freelance web application developer** deploying responsive platforms for clients, and serve as an experienced operational team lead—translating complex technical requirements into smooth team workflows."
+    "I'm a **third-year Computer Science student (Data-Centric Computing)** at Memorial University of Newfoundland with a minor in Mathematics[cite: 1].",
+    "At my core, I'm just someone who genuinely loves calculations, coding, and working with data. Whether it's digging into math problems, writing algorithms, or building pipelines to make sense of messy datasets, I enjoy the process of turning numbers into clear solutions[cite: 1]."
   ],
 
   skills: [
@@ -134,11 +133,11 @@ export const DATA = {
   ],
 
   hobbies: [
-    { icon: "🛠️", name: "Freelance Web Engineering", desc: "Collaborating with local business clients to translate complex commercial constraints into responsive frontend apps." },
-    { icon: "🤝", name: "Operational Leadership", desc: "Orchestrating volunteer logistics and frontline event technology operations across community teams." },
-    { icon: "🤖", name: "AI Orchestration", desc: "Designing multi-agent frameworks like NurseAI to explore structural data pipelines and intelligent automation vectors." },
-    { icon: "📊", name: "Mathematical Optimization", desc: "Leveraging my math minor to explore numerical optimization pathways and algorithmic efficiency." }
-  ]
+    { icon: "🥖", name: "Baking" },
+    { icon: "🍳", name: "Cooking" },
+    { icon: "♟️", name: "Chess" },
+    { icon: "🎧", name: "Music" }
+  ],
 };
 
 export default DATA;

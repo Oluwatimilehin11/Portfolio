@@ -41,15 +41,32 @@ function App() {
   return (
     <div style={{ backgroundColor: '#0F1624', color: '#F2EFE9', minHeight: '100vh', fontFamily: "'Inter', sans-serif", overflowX: 'hidden' }}>
       
+      {/* Dynamic Keyframes for Hover Shake */}
+      <style>{`
+        @keyframes hobbyShake {
+          0% { transform: rotate(0deg) scale(1); }
+          20% { transform: rotate(-6deg) scale(1.04); }
+          40% { transform: rotate(6deg) scale(1.04); }
+          60% { transform: rotate(-4deg) scale(1.04); }
+          80% { transform: rotate(4deg) scale(1.04); }
+          100% { transform: rotate(0deg) scale(1); }
+        }
+        .shake-card:hover {
+          animation: hobbyShake 0.45s ease-in-out;
+          border-color: #C9A84C !important;
+          box-shadow: 0 10px 25px rgba(201,168,76,0.15) !important;
+        }
+      `}</style>
+
       {/* Background Ambience */}
       <div style={{ position: 'fixed', top: '10%', right: '-80px', width: '400px', height: '400px', borderRadius: '50%', filter: 'blur(80px)', background: 'rgba(74,155,142,0.06)', pointerEvents: 'none', zIndex: 1 }} />
       <div style={{ position: 'fixed', bottom: '15%', left: '-60px', width: '320px', height: '320px', borderRadius: '50%', filter: 'blur(80px)', background: 'rgba(201,168,76,0.05)', pointerEvents: 'none', zIndex: 1 }} />
 
-      {/* Navigation */}
+      {/* Sticky Top Navigation */}
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.1rem 5%', background: 'rgba(15,22,36,0.85)', backdropFilter: 'blur(12px)', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
         <a href="#" style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.2rem', color: '#C9A84C', letterSpacing: '0.05em', textDecoration: 'none' }}>Timi.</a>
         <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-          {['About', 'Skills', 'Experience', 'Leadership', 'Projects', 'Contact'].map(link => (
+          {['About', 'Skills', 'Experience', 'Leadership', 'Projects', 'Hobbies', 'Contact'].map(link => (
             <a key={link} href={`#${link.toLowerCase()}`} style={{ color: '#8A95A8', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }}>{link}</a>
           ))}
         </div>
@@ -84,7 +101,7 @@ function App() {
       {/* About Section */}
       <section id="about" style={{ padding: '5rem 5%', position: 'relative', zIndex: 10 }}>
         <p style={{ fontSize: '0.72rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: '#4A9B8E', marginBottom: '.5rem' }}>Who I am</p>
-        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 600, marginBottom: '1rem' }}>Data meets <span style={{ color: '#C9A84C', fontStyle: 'italic' }}>systems.</span></h2>
+        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 600, marginBottom: '1rem' }}>Data meets <span style={{ color: '#C9A84C', fontStyle: 'italic' }}>logic.</span></h2>
         <div style={{ width: '48px', height: '2px', background: 'linear-gradient(90deg, #C9A84C, transparent)', marginBottom: '2.5rem' }} />
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'start' }}>
@@ -205,20 +222,51 @@ function App() {
         </div>
       </section>
 
-      {/* Hobbies Section */}
+      {/* Hobbies: Geometric Shake Cards Section */}
       <section id="hobbies" style={{ padding: '5rem 5%', background: '#141D2F', position: 'relative', zIndex: 10 }}>
         <p style={{ fontSize: '0.72rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: '#4A9B8E', marginBottom: '.5rem' }}>Outside the screen</p>
-        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 600, marginBottom: '1rem' }}>Things I <span style={{ color: '#C9A84C', fontStyle: 'italic' }}>love.</span></h2>
+        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 600, margin: '0 0 1rem 0' }}>
+          Things I <span style={{ color: '#C9A84C', fontStyle: 'italic' }}>love.</span>
+        </h2>
         <div style={{ width: '48px', height: '2px', background: 'linear-gradient(90deg, #C9A84C, transparent)', marginBottom: '2.5rem' }} />
-        
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.2rem' }}>
-          {hobbies.map((h, i) => (
-            <div key={i} style={{ background: '#1A2540', border: '1px solid rgba(201,168,76,0.18)', borderRadius: '12px', padding: '1.5rem', textAlign: 'center' }}>
-              <div style={{ fontSize: '2.2rem', marginBottom: '.8rem' }}>{h.icon}</div>
-              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.05rem', color: '#F2EFE9', marginBottom: '.4rem' }}>{h.name}</div>
-              <p style={{ fontSize: '.82rem', color: '#8A95A8', margin: 0 }}>{h.desc}</p>
-            </div>
-          ))}
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '1.5rem' }}>
+          {hobbies.map((h, i) => {
+            const shapes = [
+              '36px 12px 36px 12px',
+              '16px 36px 16px 36px',
+              '50px',
+              '12px 28px 40px 12px'
+            ];
+
+            return (
+              <div
+                key={i}
+                className="shake-card"
+                style={{
+                  background: '#1A2540',
+                  border: '1px solid rgba(201,168,76,0.18)',
+                  borderRadius: shapes[i % shapes.length],
+                  padding: '2rem 1rem',
+                  textAlign: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  aspectRatio: '1 / 1'
+                }}
+              >
+                <div style={{ fontSize: '2.8rem', marginBottom: '.5rem' }}>
+                  {h.icon}
+                </div>
+                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.15rem', color: '#F2EFE9', fontWeight: 600 }}>
+                  {h.name}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
