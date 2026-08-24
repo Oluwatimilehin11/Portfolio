@@ -19,8 +19,8 @@ export const DATA = {
   ],
 
   about: [
-    "I'm a **third-year Computer Science student (Data-Centric Computing)** at Memorial University of Newfoundland with a minor in Mathematics[cite: 1].",
-    "At my core, I'm just someone who genuinely loves calculations, coding, and working with data. Whether it's digging into math problems, writing algorithms, or building pipelines to make sense of messy datasets, I enjoy the process of turning numbers into clear solutions[cite: 1]."
+    "I'm a **third-year Computer Science student (Data-Centric Computing)** at Memorial University of Newfoundland with a minor in Mathematics.",
+    "At my core, I'm just someone who genuinely loves calculations, coding, and working with data. Whether it's digging into math problems, writing algorithms, or building pipelines to make sense of messy datasets, I enjoy the process of turning numbers into clear solutions."
   ],
 
   skills: [
@@ -74,11 +74,11 @@ export const DATA = {
 
   leadership: [
     {
-      role: "Ushering Team Lead",
+      role: "Guest Services Lead",
       organization: "CMFI Newfoundland · St. John's, NL",
       period: "Ongoing",
       bullets: [
-        "Lead and coordinate service operations, logistics, and usher team scheduling, including co-leading the ushering unit for the R4 2026 conference."
+        "Lead and coordinate service operations, logistics, and  team scheduling, including co-leading the guest services unit for the R4 2026 conference."
       ]
     },
     {
@@ -115,7 +115,7 @@ export const DATA = {
     {
       name: "Data Analytics & Preprocessing Suite",
       tag: "Python · Pandas · NumPy · EDA",
-      desc: "Engineered Python-based data cleaning, preprocessing, and exploratory data analysis routines on messy, real-world data distributions. Leveraged pandas and NumPy to surface actionable trends and anomaly metrics.",
+      desc: "Engineered Python-based data cleaning, preprocessing, and exploratory data analysis routines on real-world data distributions. Leveraged pandas and NumPy to surface actionable trends and anomaly metrics.",
       links: { github: "https://github.com/Oluwatimilehin11" }
     },
     {
