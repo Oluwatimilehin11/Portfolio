@@ -8,19 +8,19 @@ export const DATA = {
     email: "aramideoluwatimilehin11@gmail.com",
     github: "https://github.com/Oluwatimilehin11",
     linkedin: "https://www.linkedin.com/in/oluwatimilehin-aramide/",
-    portfolio: "https://Oluwatimilehin11.github.io/Portfolio/",
+    portfolio: "https://oluwatimilehin11.github.io/Portfolio/",
     avatar: `${import.meta.env.BASE_URL}headshot.jpg`
   },
   
   phrases: [
     "CS Student · Data-Centric Computing · Systems Builder",
-    "Finding what I do fun and what I do fun is finding.",
+    "Building robust pipelines, low-latency engines, and actionable BI models.",
     "From C++ systems and ETL nodes to modular web architecture."
   ],
 
   about: [
     "I'm a **third-year Computer Science student (Data-Centric Computing)** at Memorial University of Newfoundland with a minor in Mathematics.",
-    "At my core, I'm just someone who genuinely loves calculations, coding, and working with data. Whether it's digging into math problems, writing algorithms, or building pipelines to make sense of messy datasets, I enjoy the process of turning numbers into clear solutions."
+    "At my core, I'm just someone who genuinely loves calculations, coding, and working with data. Whether it's tackling mathematical problems, writing algorithms, or building pipelines to make sense of complex datasets, I enjoy the process of turning numbers into clear solutions."
   ],
 
   skills: [
@@ -52,6 +52,15 @@ export const DATA = {
       ]
     },
     {
+      role: "Guest Services Lead",
+      organization: "CMFI Newfoundland · St. John's, NL",
+      company: "CMFI Newfoundland · St. John's, NL",
+      period: "Ongoing",
+      bullets: [
+        "Lead and coordinate service operations, logistics, and guest services scheduling, including co-leading the guest services unit for major regional conferences."
+      ]
+    },
+    {
       role: "Data Engineering Specialization",
       company: "Dataset Nexus Tech · Remote",
       period: "Apr 2022 – Jun 2023",
@@ -78,7 +87,7 @@ export const DATA = {
       organization: "CMFI Newfoundland · St. John's, NL",
       period: "Ongoing",
       bullets: [
-        "Lead and coordinate service operations, logistics, and  team scheduling, including co-leading the guest services unit for the R4 2026 conference."
+        "Lead and coordinate service operations, logistics, and guest services scheduling, including co-leading the guest services unit for the R4 2026 conference."
       ]
     },
     {
@@ -115,7 +124,7 @@ export const DATA = {
     {
       name: "Data Analytics & Preprocessing Suite",
       tag: "Python · Pandas · NumPy · EDA",
-      desc: "Engineered Python-based data cleaning, preprocessing, and exploratory data analysis routines on real-world data distributions. Leveraged pandas and NumPy to surface actionable trends and anomaly metrics.",
+      desc: "Engineered Python-based data cleaning, preprocessing, and exploratory data analysis routines on messy, real-world data distributions. Leveraged pandas and NumPy to surface actionable trends and anomaly metrics.",
       links: { github: "https://github.com/Oluwatimilehin11" }
     },
     {
@@ -137,7 +146,7 @@ export const DATA = {
     { icon: "🍳", name: "Cooking" },
     { icon: "♟️", name: "Chess" },
     { icon: "🎧", name: "Music" }
-  ],
+  ]
 };
 
 export default DATA;
