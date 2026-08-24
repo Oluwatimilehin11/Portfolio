@@ -13,7 +13,7 @@ export const DATA = {
   },
   
   phrases: [
-    "CS Student · Data-Centric Computing · Math geek:",
+    "CS Student · Data-Centric Computing · Systems Builder",
     "Finding what I do fun, and what I do fun is finding.",
     "From C++ systems and ETL nodes to modular web architecture."
   ],
@@ -83,15 +83,21 @@ export const DATA = {
 
   projects: [
     {
+      name: "Tov Studios Platform",
+      tag: "React · Vite · Production Web App",
+      desc: "Designed, engineered, and shipped a modern commercial web application for a creative photography studio featuring modular React architecture, responsive galleries, and optimized asset delivery.",
+      links: { live: "https://tov-studios.vercel.app", github: "https://github.com/Oluwatimilehin11" }
+    },
+    {
       name: "C++ Console Trading System",
       tag: "C++ · SQLite3 · Systems Architecture",
-      desc: "Architected a high-performance console trading application in C++ integrated with an embedded SQLite3 database layer. Implemented efficient order execution simulation, transaction auditing, and persistent trade logging with a focus on strict memory management and low-latency algorithmic design.",
+      desc: "Architected a high-performance console trading application in C++ integrated with an embedded SQLite3 database layer. Implemented efficient order execution simulation, transaction auditing, and persistent trade logging with strict memory management.",
       links: { github: "https://github.com/Oluwatimilehin11" }
     },
     {
       name: "Enhancing Website Engagement",
       tag: "Data · ETL Pipelines · Airflow",
-      desc: "Analyzed historical user engagement data and performed exploratory data analysis (EDA) to uncover behavior drivers. Consolidated multi-source telemetry into a centralized PostgreSQL database backed by automated Apache Airflow ETL workflows.",
+      desc: "Analyzed historical user engagement telemetry and performed exploratory data analysis (EDA) to uncover behavior drivers. Consolidated multi-source datasets into a centralized PostgreSQL database backed by automated Apache Airflow ETL workflows.",
       links: { github: "https://github.com/Oluwatimilehin11" }
     },
     {
@@ -99,12 +105,6 @@ export const DATA = {
       tag: "Python · Pandas · NumPy · EDA",
       desc: "Engineered Python-based data cleaning, preprocessing, and exploratory data analysis routines on real-world data distributions. Leveraged pandas and NumPy to surface actionable trends and anomaly metrics.",
       links: { github: "https://github.com/Oluwatimilehin11" }
-    },
-    {
-      name: "Tov Studios Commercial Platform",
-      tag: "Web · React · Vite · Production",
-      desc: "Engineered and shipped a commercial web application for a photography client featuring modular React routing, responsive galleries, and optimized deployment.",
-      links: { live: "https://tov-studios.vercel.app", github: "https://github.com/Oluwatimilehin11" }
     },
     {
       name: "NurseAI — ICU Assistant",
