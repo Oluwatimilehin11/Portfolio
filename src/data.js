@@ -41,6 +41,33 @@ export const DATA = {
     coursework: ["Data Management", "Databases", "Statistics", "Programming", "Data-Centric Computing"]
   },
 
+  certifications: [
+    {
+      title: "Enterprise Design Thinking Practitioner",
+      issuer: "IBM SkillsBuild",
+      date: "Feb 2026",
+      link: "https://www.credly.com/go/AMrXefWO"
+    },
+    {
+      title: "Essential Skills in Generative AI",
+      issuer: "McGraw Hill · SIMnet",
+      date: "Mar 2026",
+      link: "https://www.linkedin.com/in/oluwatimilehin-aramide/"
+    },
+    {
+      title: "AI Experiential Learning Lab",
+      issuer: "IBM SkillsBuild",
+      date: "May 2026",
+      link: "https://www.linkedin.com/in/oluwatimilehin-aramide/"
+    },
+    {
+      title: "Data Science & AI Bootcamp (Data Engineering)",
+      issuer: "Dataset Nexus Tech · Dubai",
+      date: "Dec 2022",
+      link: "https://www.linkedin.com/in/oluwatimilehin-aramide/"
+    }
+  ],
+
   experience: [
     {
       role: "Shift / Swing Manager",

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { DATA } from './data'; 
 
 function App() {
-  const { profile, phrases, about, skills, experience, projects, hobbies, education } = DATA;
+  const { profile, phrases, about, skills, experience, projects, hobbies, education, certifications } = DATA;
 
   const [text, setText] = useState('');
   const [phraseIdx, setPhraseIdx] = useState(0);
@@ -75,7 +75,6 @@ function App() {
         gap: '3rem', 
         flexWrap: 'wrap-reverse' 
       }}>
-        {/* Left Headline Content */}
         <div style={{ flex: '1 1 420px', maxWidth: '560px' }}>
           <p style={{ 
             fontSize: '0.78rem', 
@@ -154,7 +153,7 @@ function App() {
           </div>
         </div>
 
-        {/* Squircle Centered Portrait */}
+        {/* Centered Squircle Portrait */}
         <div style={{ flex: '0 0 auto', margin: '0 auto' }}>
           <div style={{ 
             width: 'clamp(210px, 22vw, 270px)', 
@@ -182,7 +181,7 @@ function App() {
       {/* Main Container */}
       <main style={{ maxWidth: '960px', margin: '0 auto', padding: '0 8%' }}>
         
-        {/* About & Skills */}
+        {/* About, Education & Skills */}
         <section id="about" style={{ padding: '4.5rem 0', borderTop: '1px solid #E5E7EB' }}>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.7rem, 4vw, 2rem)', marginBottom: '1.5rem', color: '#111827' }}>About</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3.5rem', color: '#4B5563' }}>
@@ -210,6 +209,28 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Certifications Section */}
+        {certifications && (
+          <section id="certifications" style={{ padding: '3.5rem 0', borderTop: '1px solid #E5E7EB' }}>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.7rem, 4vw, 2rem)', marginBottom: '1.8rem', color: '#111827' }}>Certifications & Credentials</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.2rem' }}>
+              {certifications.map((cert, idx) => (
+                <div key={idx} style={{ padding: '1.2rem 1.4rem', background: '#FAFAFA', borderRadius: '8px', border: '1px solid #E5E7EB', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  <div>
+                    <div style={{ color: '#111827', fontWeight: 600, fontSize: '.95rem', marginBottom: '.3rem' }}>{cert.title}</div>
+                    <div style={{ color: '#6B7280', fontSize: '.84rem' }}>{cert.issuer} · {cert.date}</div>
+                  </div>
+                  <div style={{ marginTop: '0.9rem' }}>
+                    <a href={cert.link} target="_blank" rel="noreferrer" style={{ color: '#B45309', fontSize: '.8rem', fontWeight: 600, textDecoration: 'none' }}>
+                      Verify Credential ↗
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Selected Projects */}
         <section id="projects" style={{ padding: '4.5rem 0', borderTop: '1px solid #E5E7EB' }}>
