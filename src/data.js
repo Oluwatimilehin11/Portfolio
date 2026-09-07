@@ -5,7 +5,7 @@ export const DATA = {
     title: "Data-Centric Computing & Mathematics",
     location: "St. John's, NL",
     phone: "(709) 853-7163",
-    email: "aramideoluwatimilehin11@gmail.com",
+    email: "ooaramide@mun.ca",
     github: "https://github.com/Oluwatimilehin11",
     linkedin: "https://www.linkedin.com/in/oluwatimilehin-aramide/",
     portfolio: "https://oluwatimilehin11.github.io/Portfolio/",
